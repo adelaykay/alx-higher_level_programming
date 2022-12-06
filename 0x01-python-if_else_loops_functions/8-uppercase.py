@@ -6,9 +6,10 @@ def islower(c):
 
 def uppercase(str):
     """Prints a string in uppercase followed by a new line"""
+    new_str = ""
     for char in str:
         if islower(char):
-            print("{}".format(chr(ord(char) - 32)), end="")
+            new_str += f"{chr(ord(char) - 32)}"
         else:
-            print("{}".format(char), end="")
-    print("")
+            new_str += f"{char}"
+    print("{}".format(new_str))
