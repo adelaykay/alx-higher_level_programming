@@ -1,0 +1,7 @@
+## 0x03. Python - Data Structures: Lists, Tuples
+
+# Tasks
+
+# Resource Links
+
+# My thoughts
