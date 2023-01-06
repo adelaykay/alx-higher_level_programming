@@ -2,3 +2,4 @@
 """Empty class documentation"""
 class Square:
     """An empty class"""
+    pass
