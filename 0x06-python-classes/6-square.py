@@ -8,8 +8,11 @@ class Square:
         """ Instantiation method
             Args:
                 size (int): private instance attribute with default value 0
-                position (tuple): private instance attribute, must be
+                position (tuple)((int), (int)): private instance attribute, must be
                                  a tuple of 2 positive integers
+            Attributes:
+                __size (int): size of the square
+                __position (tuple)((int), (int)): 
         """
         self.size = size
         self.position = position
@@ -42,13 +45,15 @@ class Square:
             Property setter def position(self, value) to set position as value
             Args:
                 Value (tuple): must be a tuple of two positive integers
+            Raises:
+                TypeError: if postion is not a tuple of 2 positive integers
         """
         return self.__position
 
     @position.setter
     def position(self, value):
         if isinstance(value, tuple) and isinstance(value[0], int)\
-                and isinstance(value[1], int):
+                and isinstance(value[1], int) and len(value) == 2:
             self.__position = value
         else:
             raise TypeError("position must be a tuple of 2 positive integers")
@@ -68,6 +73,8 @@ class Square:
         if self.__size == 0:
             print()
         else:
+            for h in range(self.__position[1]):
+                print()
             for i in range(self.__size):
                 for j in range(self.__position[0]):
                     print("", end=" ")
