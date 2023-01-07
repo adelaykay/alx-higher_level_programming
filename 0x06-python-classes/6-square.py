@@ -8,11 +8,11 @@ class Square:
         """ Instantiation method
             Args:
                 size (int): private instance attribute with default value 0
-                position (tuple)((int), (int)): private instance attribute, must be
-                                 a tuple of 2 positive integers
+                position (tuple)((int), (int)): private instance attribute,
+                                 must be a tuple of 2 positive integers
             Attributes:
                 __size (int): size of the square
-                __position (tuple)((int), (int)): 
+                __position (tuple)((int), (int)):
         """
         self.size = size
         self.position = position
